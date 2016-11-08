@@ -5,5 +5,4 @@ node_modules/
 public/lib/
 
 # Ignore the mac os meta files
-# Should be ignored anyway if it is always in the node_modules/ dir
 .DS_Store
