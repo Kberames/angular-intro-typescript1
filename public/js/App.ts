@@ -10,17 +10,26 @@ namespace App {
                     url: '/',
                     //template: 'This is my home page. <p> title value: {{ title }} </p>',
                     templateUrl: 'templates/home.html',
-                    controller: App.HomeController
+                    controller: App.HomeController,
+                    controllerAs: 'myController'
                 })
                 .state ('about', {
                     url: '/about',
                     templateUrl: 'templates/about.html',
-                    controller: App.AboutController
+                    controller: App.AboutController,
+                    controllerAs: 'aboutController'
                 })
                 .state ('contact', {
                     url: '/contact',
                     templateUrl: 'templates/contact.html',
-                    controller: App.ContactController
+                    controller: App.ContactController,
+                    controllerAs: 'contactController'
+                })
+                .state ('faq', {
+                    url: '/faq',
+                    templateUrl: 'templates/faq.html',
+                    controller: App.FaqController,
+                    controllerAs: 'faqController'
                 })
             }
     ]);
